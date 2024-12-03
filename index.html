@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Robo Revision</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='scripts.js'></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Robo Revision</h1>
+        <div class="alert" id="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <p class="alert_text" id="alert_text">Loading...</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div style="align-items: center;" class="box revise">
+                <div class="card">
+                    <div class="card-content">
+                        <div>
+                            <p class="card-question">Question</p>
+                        </div>
+                        <div class="card-answer">
+                            <input type="text" id="given_answer" placeholder="Answer">
+                            <button onclick="checkAnswer()">Check Answer</button>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="nextCard()">Next Card</button>
+            </div>
+            <div class="create box">
+                <input type="text" id="question" placeholder="Enter Question">
+                <input type="text" id="answer" placeholder="Enter CORRECT answer">
+                <button id="createCardButton">Create Card</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2021 Robo Revision. All rights reserved.</p>
+    </div>
+</body>
+</html>
