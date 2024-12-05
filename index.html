@@ -12,7 +12,7 @@
     <div class="header">
         <h1>Robo Revision</h1>
         <div class="alert" id="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <button class="closebtn" onclick="this.parentElement.style.opacity='0';">&times;</button>
             <p class="alert_text" id="alert_text">Loading...</p>
         </div>
     </div>
@@ -23,6 +23,7 @@
                     <div class="card-content">
                         <div>
                             <p class="card-question">Question</p>
+                            <p id="question-box">Test Question ?</p>
                         </div>
                         <div class="card-answer">
                             <input type="text" id="given_answer" placeholder="Answer">
